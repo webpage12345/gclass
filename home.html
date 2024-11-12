@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Classroom </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #ffffff;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar ul li a:hover {
+            color: #007bff;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        /* Mobile view adjustments */
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">To-Do</a></li>
+            <li><a href="#">Classroom 1</a></li>
+            <li><a href="#">Classroom 2</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="card-container">
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>CCIT 104</h3>
+                <p>Instructor: John Doe</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>ITA 215 - IT Infrastructure</h3>
+                <p>Instructor: Jane Smith</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>IT 1210</h3>
+                <p>Instructor: Marcus Brown</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>BSIT 1A - CCIT 101</h3>
+                <p>Instructor: Michelle King</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>BSIT 1A Pathfit 1</h3>
+                <p>Instructor: Mark Davis</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Grid Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 10px;
+            }
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/50" alt="Profile">
+                <h3>CCIT 105 - Information</h3>
+                <p>Instructor: John Smith</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/50" alt="Profile">
+                <h3>CCIT 104</h3>
+                <p>Instructor: Alex Garcia-Banks</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/50" alt="Profile">
+                <h3>ITA213-2A</h3>
+                <p>Instructor: Peng</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>ITA 215 - IT Infrastructure</h3>
+                <p>Instructor: Jane Doe</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>CCIT 104: Data Struct.</h3>
+                <p>Instructor: Megan White</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>IT 1210</h3>
+                <p>Instructor: Samantha Brown</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>BSIT 1A - IT 127</h3>
+                <p>Instructor: William Chan</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>BSIT 1A - CCIT 101</h3>
+                <p>Instructor: Nicole Zhang</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>Web Systems and Tech</h3>
+                <p>Instructor: Steve Clark</p>
+            </div>
+            <div class="card">
+                <img src="" alt="Profile">
+                <h3>BSIT 1A Pathfit 1</h3>
+                <p>Instructor: Mark Gallagher</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
